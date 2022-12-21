@@ -1,9 +1,16 @@
+import { useRouter } from 'next/router';
 import Card from '../ui/Card';
 import classes from './MeetupItem.module.css';
 
 function MeetupItem(props) {
+  const router = useRouter();
+
+  const showDetailhandler = () => {
+    router.push('/' + props.id);
+  };
+
   return (
-    <li className={classes.item}>
+    <li className={classes.item} onClick={showDetailhandler}>
       <Card>
         <div className={classes.image}>
           <img src={props.image} alt={props.title} />
