@@ -39,7 +39,6 @@ export const getServerSideProps: GetServerSideProps = async (
   return {
     props: {
       BoxOfficeData: BoxOfficeData.data,
-      // MovieData: MovieData.data,
     },
   };
 };

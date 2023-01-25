@@ -1,0 +1,35 @@
+.rank-container {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rank-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid black;
+    min-width: 350px;
+}
+
+.rank-img {
+    border-radius: 4px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.cont-wrap {
+    text-align: left;
+    display: flex;
+}
+
+.cont-title {
+    color: grey;
+    font-size: 13px;
+    width: 30px;
+}
+
+.cont-data {
+    font-size: 15px;
+}

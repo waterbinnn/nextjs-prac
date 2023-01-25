@@ -5,7 +5,7 @@ import RankCard from "./RankCard";
 const cx = classNames.bind(styles);
 
 const Rank = (props: any) => {
-  const { BoxOfficeData, MovieData } = props;
+  const { BoxOfficeData } = props;
   const chartData = BoxOfficeData.boxOfficeResult.dailyBoxOfficeList;
 
   return (
@@ -16,7 +16,7 @@ const Rank = (props: any) => {
         <div className={cx("rank-container")}>
           {chartData.map((data: any) => (
             <>
-              <RankCard data={data} />
+              <RankCard data={data} key={data.movieCd} />
             </>
           ))}
         </div>
